@@ -29,7 +29,7 @@ public final class Downloads implements BaseColumns {
     /**
      * DownloadProvider authority
      */
-    public static final String AUTHORITY = "com.mozillaonline.downloads";
+    public static final String AUTHORITY = "pl.leszczenko.doctormyasnikov.downloads";
 
     /**
      * @hide
@@ -42,32 +42,32 @@ public final class Downloads implements BaseColumns {
      * 
      * @hide
      */
-    public static final String PERMISSION_ACCESS = "com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER";
+    public static final String PERMISSION_ACCESS = "pl.leszczenko.doctormyasnikov.permission.ACCESS_DOWNLOAD_MANAGER";
 
     /**
      * The permission to access the download manager's advanced functions
      * 
      * @hide
      */
-    public static final String PERMISSION_ACCESS_ADVANCED = "com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED";
+    public static final String PERMISSION_ACCESS_ADVANCED = "pl.leszczenko.doctormyasnikov.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED";
 
     /**
      * The permission to access the all the downloads in the manager.
      */
-    public static final String PERMISSION_ACCESS_ALL = "com.mozillaonline.permission.ACCESS_ALL_DOWNLOADS";
+    public static final String PERMISSION_ACCESS_ALL = "pl.leszczenko.doctormyasnikov.permission.ACCESS_ALL_DOWNLOADS";
 
     /**
      * The permission to send broadcasts on download completion
      * 
      * @hide
      */
-    public static final String PERMISSION_SEND_INTENTS = "com.mozillaonline.permission.SEND_DOWNLOAD_COMPLETED_INTENTS";
+    public static final String PERMISSION_SEND_INTENTS = "pl.leszczenko.doctormyasnikov.permission.SEND_DOWNLOAD_COMPLETED_INTENTS";
 
     /**
      * The permission to download files without any system notification being
      * shown.
      */
-    public static final String PERMISSION_NO_NOTIFICATION = "com.mozillaonline.permission.DOWNLOAD_WITHOUT_NOTIFICATION";
+    public static final String PERMISSION_NO_NOTIFICATION = "pl.leszczenko.doctormyasnikov.permission.DOWNLOAD_WITHOUT_NOTIFICATION";
 
     /**
      * The content:// URI for the data table in the provider
@@ -391,7 +391,7 @@ public final class Downloads implements BaseColumns {
      * multiple applications share the same UID, all those applications will be
      * allowed to access this download. This column can be updated after the
      * download is initiated. This requires the permission
-     * com.mozillaonline.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED.
+     * pl.leszczenko.doctormyasnikov.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED.
      * <P>
      * Type: INTEGER
      * </P>

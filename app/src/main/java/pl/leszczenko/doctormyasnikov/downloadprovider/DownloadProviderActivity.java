@@ -35,7 +35,7 @@ public class DownloadProviderActivity extends Activity implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
-	setContentView(R.layout.main);
+	setContentView(R.layout.content_main);
 
 	mDownloadManager = new DownloadManager(getContentResolver(),
 		getPackageName());
@@ -68,7 +68,7 @@ public class DownloadProviderActivity extends Activity implements
 	mStartDownloadButton.setOnClickListener(this);
 	mShowDownloadListButton.setOnClickListener(this);
 
-	mUrlInputEditText.setText("http://down.mumayi.com/41052/mbaidu");
+	mUrlInputEditText.setText("http://radiovesti.ru/audio/250/978.mp3");
     }
 
     private void startDownloadService() {

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.leszczenko.doctormyasnikov">
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="22" />
 
     <permission
         android:name="pl.leszczenko.doctormyasnikov.permission.ACCESS_DOWNLOAD_MANAGER"
@@ -39,7 +42,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".downloadprovider.DownloadProviderActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -49,9 +52,12 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="pl.leszczenko.doctormyasnikov.providers.downloads.ui.DownloadList" >
+        </activity>
+
         <provider
             android:name="pl.leszczenko.doctormyasnikov.providers.downloads.DownloadProvider"
-            android:authorities="com.mozillaonline.downloads" />
+            android:authorities="pl.leszczenko.doctormyasnikov.downloads" />
 
         <service android:name="pl.leszczenko.doctormyasnikov.providers.downloads.DownloadService" />
 

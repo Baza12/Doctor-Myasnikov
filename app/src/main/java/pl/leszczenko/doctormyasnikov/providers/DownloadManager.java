@@ -486,7 +486,7 @@ public class DownloadManager {
 	 * Control whether a system notification is posted by the download
 	 * manager while this download is running. If enabled, the download
 	 * manager posts notifications about downloads through the system
-	 * {@link com.mozillaonline.providers.NotificationManager}. By default,
+	 * {@link pl.leszczenko.doctormyasnikov.providers.NotificationManager}. By default,
 	 * a notification is shown.
 	 * 
 	 * If set to false, this requires the permission
